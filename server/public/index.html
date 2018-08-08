@@ -14,9 +14,10 @@
 <!-- app initializes application and sets scope -->
 <body ng-app="FoodApp"> 
     
-    <div ng-controller="FoodController as vm">
-        I enjoy eating: <input ng-model="vm.foodin" placeholder="favorite food goes here" type="text">
-
+    <div ng-controller="FoodController as mc">
+        I enjoy eating: <input ng-model="mc.foodIn" placeholder="favorite food goes here" type="text">
+        <button ng-click="mc.addFood()"> PRESS BUTTON</button>
+   <p>{{mc.favoriteFood}}</p>
     </div>
 
 
